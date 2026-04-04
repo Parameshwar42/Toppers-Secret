@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Root API check
+app.get('/api', (req, res) => {
+    res.json({ message: 'Topper Secret API is online!', access: 'restricted' });
+});
+
 // Health check for Vercel troubleshooting
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'Backend is active', time: new Date() });
