@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary-fixed": "#002109",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "error-container": "#ffdad6",
+                    "secondary": "#712ae2",
+                    "inverse-surface": "#2d3133",
+                    "surface-container": "#eceef0",
+                    "on-surface-variant": "#434655",
+                    "tertiary-fixed-dim": "#4ae176",
+                    "surface-bright": "#f7f9fb",
+                    "secondary-fixed": "#eaddff",
+                    "on-tertiary-fixed-variant": "#005321",
+                    "inverse-primary": "#b4c5ff",
+                    "primary-fixed": "#dbe1ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "primary": "#004ac6",
+                    "error": "#ba1a1a",
+                    "tertiary": "#006229",
+                    "outline": "#737686",
+                    "surface-dim": "#d8dadc",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "background": "#f7f9fb",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "primary-container": "#2563eb",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#25005a",
+                    "tertiary-container": "#007e37",
+                    "on-background": "#191c1e",
+                    "surface": "#f7f9fb",
+                    "outline-variant": "#c3c6d7",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#00174b",
+                    "secondary-container": "#8a4cfc",
+                    "on-primary-container": "#eeefff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#6bff8f",
+                    "on-tertiary-container": "#c1ffc5",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-variant": "#e0e3e5",
+                    "on-secondary-container": "#fffbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        .digital-atelier-gradient {
+            background: linear-gradient(135deg, #004ac6 0%, #2563eb 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-200/50 transition-colors scale-95 duration-200">
+<span class="material-symbols-outlined text-slate-600">menu</span>
+</button>
+<h1 class="text-xl font-extrabold text-blue-700 dark:text-blue-400 font-['Plus_Jakarta_Sans'] tracking-tight">AP EAMCET</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-200/50 transition-colors">
+<span class="material-symbols-outlined text-slate-600">search</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a professional student with soft lighting and a neutral blurred library background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcwv_-c8t-47qQeuIP5rx24I8M--CknXTN3dE29E4A5OUeR8cwobVEcqmOx27Vlo6GUe4gCS1CiQb8V81eJvPNsDSi5_PCXxUMfVKVEXq1E6DNLV4j743XDIJAaXtPiPC9H_BvFeh6NJO7gSBxH4u4SGLP299Rmus_uXlBbjr_c437ZFsKUzUuRCG27RIpCneZKpTlesTdvXSnoTwwKZr1PT8aErG2TJxfJbrQjN48De6we0L3ySJ-Yn8-9TaOH7VIQs5R5Vgo6yw"/>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Header Section -->
+<header class="mb-10">
+<p class="text-primary font-label font-bold text-sm uppercase tracking-widest mb-2">Academic Resources</p>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface">AP EAMCET Previous Year Papers</h2>
+<div class="mt-4 h-1 w-12 digital-atelier-gradient rounded-full"></div>
+</header>
+<!-- Bento Grid of Papers -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+<!-- Year Card 2025 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2025</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2024 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2024</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2023 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2023</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2022 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2022</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2021 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2021</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2020 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2020</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2019 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2019</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2018 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2018</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2017 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2017</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+<!-- Year Card 2016 -->
+<button class="aspect-square flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_0_rgba(25,28,30,0.04)] hover:bg-surface-container-high transition-all duration-300 group scale-100 active:scale-95 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+</div>
+<span class="font-headline text-xl font-extrabold text-on-surface">2016</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mt-1">Previous Year Paper</span>
+</button>
+</div>
+<!-- Descriptive CTA Banner -->
+<section class="mt-12 p-8 rounded-2xl digital-atelier-gradient text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-2">Prepare Smarter</h3>
+<p class="font-body opacity-90 max-w-md">Access solved answers, weightage analysis, and difficulty breakdown for each AP EAMCET paper.</p>
+<button class="mt-6 px-6 py-3 bg-surface-container-lowest text-primary font-bold rounded-xl shadow-lg hover:bg-opacity-90 transition-all scale-100 active:scale-95">
+                    Start Mock Test
+                </button>
+</div>
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[180px]">school</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<div class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md shadow-[0_-4px_24px_0_rgba(25,28,30,0.06)] rounded-t-2xl z-50 glass-nav">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-blue-600 transition-colors scale-90 duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100/50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-200 rounded-xl px-5 py-1.5 transition-colors scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Papers</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-blue-600 transition-colors scale-90 duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-1.5 hover:text-blue-600 transition-colors scale-90 duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold">Profile</span>
+</a>
+</div>
+</body></html>

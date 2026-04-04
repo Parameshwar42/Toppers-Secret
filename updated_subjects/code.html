@@ -1,0 +1,197 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Digital Atelier - Subjects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-surface-variant": "#434655",
+                "surface-container-lowest": "#ffffff",
+                "surface-variant": "#e0e3e5",
+                "on-secondary-fixed-variant": "#5a00c6",
+                "on-primary-fixed": "#00174b",
+                "surface-tint": "#0053db",
+                "on-primary-fixed-variant": "#003ea8",
+                "on-tertiary-container": "#c1ffc5",
+                "surface-container": "#eceef0",
+                "outline-variant": "#c3c6d7",
+                "secondary-fixed-dim": "#d2bbff",
+                "surface-dim": "#d8dadc",
+                "tertiary-fixed-dim": "#4ae176",
+                "secondary-container": "#8a4cfc",
+                "surface": "#f7f9fb",
+                "on-surface": "#191c1e",
+                "surface-container-high": "#e6e8ea",
+                "outline": "#737686",
+                "on-secondary-fixed": "#25005a",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#002109",
+                "secondary": "#712ae2",
+                "primary-fixed": "#dbe1ff",
+                "surface-bright": "#f7f9fb",
+                "on-error": "#ffffff",
+                "inverse-surface": "#2d3133",
+                "on-primary": "#ffffff",
+                "primary-container": "#2563eb",
+                "inverse-on-surface": "#eff1f3",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#005321",
+                "on-secondary": "#ffffff",
+                "surface-container-highest": "#e0e3e5",
+                "background": "#f7f9fb",
+                "surface-container-low": "#f2f4f6",
+                "on-tertiary": "#ffffff",
+                "tertiary-container": "#007e37",
+                "on-secondary-container": "#fffbff",
+                "tertiary": "#006229",
+                "tertiary-fixed": "#6bff8f",
+                "inverse-primary": "#b4c5ff",
+                "primary": "#004ac6",
+                "on-primary-container": "#eeefff",
+                "secondary-fixed": "#eaddff",
+                "primary-fixed-dim": "#b4c5ff",
+                "on-background": "#191c1e"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "1rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32" data-mode="connect">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm shadow-slate-200/50 dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400" style="">menu_book</span>
+<h1 class="text-xl font-bold text-slate-900 dark:text-slate-50 tracking-tighter" style=""><span style="font-family: &quot;Plus Jakarta Sans&quot;;">Topper Secret</span></h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="bg-primary-container/10 px-3 py-1 rounded-full">
+<span class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-semibold text-blue-600 dark:text-blue-400" style="">12 Credits</span>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Hero & Search Section -->
+<section class="mb-10">
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold tracking-tight mb-2" style="">Explore Subjects</h2>
+<p class="text-on-surface-variant font-medium" style="">Curated knowledge libraries for your academic excellence.</p>
+</div>
+<!-- Search Bar (Nesting Principle) -->
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" style="">search</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-xl py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-medium transition-all" placeholder="Search subjects or topics..." type="text">
+</div>
+</section>
+<!-- Subjects Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured: Math (Large Card) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between group cursor-pointer hover:bg-surface-container-high transition-all active:scale-[0.98]">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">calculate</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[11px] font-bold tracking-wider" style="">POPULAR</span>
+</div>
+<div class="mt-12">
+<h3 class="text-2xl font-bold mb-1" style="">Mathematics</h3>
+<p class="text-on-surface-variant text-sm mb-4" style="">From Advanced Calculus to Linear Algebra</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary" style="">description</span>
+<span class="text-xs font-bold text-secondary" style="">142 Documents Available</span>
+</div>
+</div>
+</div>
+<!-- Science -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between group cursor-pointer hover:bg-surface-container-high transition-all active:scale-[0.98]">
+<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed-variant mb-6">
+<span class="material-symbols-outlined text-2xl" style="">science</span>
+</div>
+<div class="">
+<h3 class="text-xl font-bold mb-1" style="">Physics</h3>
+<p class="text-on-surface-variant text-xs mb-3 font-medium" style="">89 Resources</p>
+<div class="h-1 w-12 bg-secondary rounded-full opacity-30 group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Technology -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between group cursor-pointer hover:bg-surface-container-high transition-all active:scale-[0.98]">
+<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed-variant mb-6">
+<span class="material-symbols-outlined text-2xl" style="">computer</span>
+</div>
+<div class="">
+<h3 class="text-xl font-bold mb-1" style="">Chemistry</h3>
+<p class="text-on-surface-variant text-xs mb-3 font-medium" style="">114 Resources</p>
+<div class="h-1 w-12 bg-secondary rounded-full opacity-30 group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Arts -->
+<!-- Humanities -->
+<!-- Featured Image/Promo (Asymmetric Layout) -->
+<div class="md:col-span-12 relative overflow-hidden rounded-xl h-48 bg-primary">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay" data-alt="Modern minimalist workspace with open book and digital tablet, soft focus, cinematic lighting with warm sunset tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqNE6TxBzsQiP_TJ23JtYEzaHluUAzQIgYsOPdGBXdPEs5yz3PUe0Txne9WIbQI1ssJIgAdBiJUC0oN5f0-Rqg1N1ZLTfeQcAaRBcsvmFyN8hTvJ84vZXU6IRtMCLX2YDwBa8GcCpruFva_1CV_wGEOelIeZS79MLFdL5m7z4z8jvGgLQfs2qlAMl5W6_14grAsND1Kv0PwhYmci3X2Bn3TyKQ0PCaWGiPPOeJdNvlEZihwY33d_5MRZ7aQWLlH4AhMLbsmcJMCw" style="">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent flex flex-col justify-center px-10">
+<h3 class="text-2xl font-bold text-white mb-2" style="">New: AI Ethics Module</h3>
+<p class="text-white/80 font-medium max-w-md" style="">Discover the latest research and documentation on the intersection of humanities and technology.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#f7f9fb]/80 dark:bg-slate-950/80 backdrop-blur-md shadow-[0_-8px_24px_rgba(25,28,30,0.06)] z-50 rounded-t-2xl">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-200 scale-98" href="../updated_homepage/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Home</span>
+</a>
+<!-- Documents -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-200 scale-98" href="../eamcet_categories/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Documents</span>
+</a>
+<!-- Subjects (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-200 rounded-2xl px-5 py-2 transition-transform duration-200 scale-98" href="../updated_subjects/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">category</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold">Subjects</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition-transform duration-200 scale-98" href="../profile_wallet/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Profile</span>
+</a>
+</nav>
+</body></html>

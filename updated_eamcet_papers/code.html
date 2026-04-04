@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#434655",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "on-primary-fixed": "#00174b",
+                    "surface-tint": "#0053db",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-tertiary-container": "#c1ffc5",
+                    "surface-container": "#eceef0",
+                    "outline-variant": "#c3c6d7",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed-dim": "#4ae176",
+                    "secondary-container": "#8a4cfc",
+                    "surface": "#f7f9fb",
+                    "on-surface": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "outline": "#737686",
+                    "on-secondary-fixed": "#25005a",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#002109",
+                    "secondary": "#712ae2",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-bright": "#f7f9fb",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2d3133",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#2563eb",
+                    "inverse-on-surface": "#eff1f3",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#005321",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#007e37",
+                    "on-secondary-container": "#fffbff",
+                    "tertiary": "#006229",
+                    "tertiary-fixed": "#6bff8f",
+                    "inverse-primary": "#b4c5ff",
+                    "primary": "#004ac6",
+                    "on-primary-container": "#eeefff",
+                    "secondary-fixed": "#eaddff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-background": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top App Bar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full shadow-sm shadow-slate-200/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600" data-icon="menu_book">menu_book</span>
+<h1 class="text-xl font-bold text-slate-900 tracking-tighter">Digital Atelier</h1>
+</div>
+<div class="bg-blue-100/50 text-blue-700 px-3 py-1 rounded-full font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-semibold">
+        12 Credits
+    </div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Search Section -->
+<section class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-xl py-4 pl-12 pr-4 font-body text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Search previous papers..." type="text"/>
+</div>
+</section>
+<!-- AP EAMCET Section -->
+<section class="flex flex-col gap-6 mb-12">
+<h2 class="text-sm font-bold text-outline uppercase tracking-widest px-1">AP EAMCET Previous Year Papers</h2>
+<!-- Card 1: 2024 -->
+<!-- Card 2: 2023 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<div class="absolute inset-0 bg-primary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-primary">AP EAMCET</span>
+<span class="text-[10px] font-medium text-outline">PDF Document</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Question Paper 2023</h3>
+<p class="text-on-surface-variant text-xs mt-1">Comprehensive papers from May session.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">1 Credit</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                        Download
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- TS EAMCET Section -->
+<section class="flex flex-col gap-6">
+<h2 class="text-sm font-bold text-outline uppercase tracking-widest px-1">TS EAMCET Previous Year Papers</h2>
+<!-- Card 1: 2024 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<div class="absolute inset-0 bg-secondary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">TS EAMCET</span>
+<span class="text-[10px] font-medium text-outline">PDF Document</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Question Paper 2024</h3>
+<p class="text-on-surface-variant text-xs mt-1">Includes Engineering &amp; Agriculture papers.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">2 Credits</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                        Download
+                    </button>
+</div>
+</div>
+</div>
+<!-- Card 2: 2023 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<div class="absolute inset-0 bg-secondary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">TS EAMCET</span>
+<span class="text-[10px] font-medium text-outline">PDF Document</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Question Paper 2023</h3>
+<p class="text-on-surface-variant text-xs mt-1">Previous session papers with solutions.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">1 Credit</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                        Download
+                    </button>
+</div>
+</div>
+</div>
+<!-- Card 3: 2022 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<div class="absolute inset-0 bg-secondary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">TS EAMCET</span>
+<span class="text-[10px] font-medium text-outline">PDF Document</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Question Paper 2022</h3>
+<p class="text-on-surface-variant text-xs mt-1">Legacy paper format archive.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">1 Credit</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                        Download
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#f7f9fb]/80 backdrop-blur-md z-50 rounded-t-2xl shadow-[0_-8px_24px_rgba(25,28,30,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 text-blue-700 rounded-2xl px-5 py-2 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold mt-1">Documents</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Subjects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Profile</span>
+</a>
+</nav>
+<!-- Confirmation Modal Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center px-6 hidden">
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm"></div>
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-[2rem] p-8 relative shadow-2xl">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="payments">payments</span>
+</div>
+<h4 class="font-headline font-extrabold text-2xl tracking-tight mb-2">Confirm Purchase</h4>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Deduct credits from your balance to unlock this resource permanently?</p>
+<div class="flex flex-col w-full gap-3">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-2xl font-bold shadow-lg shadow-primary/30">Confirm Download</button>
+<button class="w-full text-outline py-4 font-bold text-sm">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

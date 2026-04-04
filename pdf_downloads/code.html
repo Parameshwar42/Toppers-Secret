@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#434655",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "on-primary-fixed": "#00174b",
+                    "surface-tint": "#0053db",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-tertiary-container": "#c1ffc5",
+                    "surface-container": "#eceef0",
+                    "outline-variant": "#c3c6d7",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed-dim": "#4ae176",
+                    "secondary-container": "#8a4cfc",
+                    "surface": "#f7f9fb",
+                    "on-surface": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "outline": "#737686",
+                    "on-secondary-fixed": "#25005a",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#002109",
+                    "secondary": "#712ae2",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-bright": "#f7f9fb",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2d3133",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#2563eb",
+                    "inverse-on-surface": "#eff1f3",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#005321",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#007e37",
+                    "on-secondary-container": "#fffbff",
+                    "tertiary": "#006229",
+                    "tertiary-fixed": "#6bff8f",
+                    "inverse-primary": "#b4c5ff",
+                    "primary": "#004ac6",
+                    "on-primary-container": "#eeefff",
+                    "secondary-fixed": "#eaddff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-background": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top App Bar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full shadow-sm shadow-slate-200/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600" data-icon="menu_book">menu_book</span>
+<h1 class="text-xl font-bold text-slate-900 tracking-tighter">Digital Atelier</h1>
+</div>
+<div class="bg-blue-100/50 text-blue-700 px-3 py-1 rounded-full font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-semibold">
+            12 Credits
+        </div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Search Section -->
+<section class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-xl py-4 pl-12 pr-4 font-body text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Search study materials..." type="text"/>
+</div>
+</section>
+<!-- Filters Section -->
+<section class="mb-10 overflow-hidden -mx-6">
+<div class="flex flex-col gap-4">
+<div class="flex overflow-x-auto hide-scrollbar gap-2 px-6">
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-primary text-on-primary text-sm font-medium shadow-lg shadow-primary/20">All Subjects</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-colors">Mathematics</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-colors">Physics</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-colors">Chemistry</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-colors">History</button>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-2 px-6">
+<button class="whitespace-nowrap flex items-center gap-2 px-4 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold uppercase tracking-wider text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="filter_list">filter_list</span>
+                        Difficulty
+                    </button>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-on-surface-variant">Introductory</button>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-on-surface-variant">Intermediate</button>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-on-surface-variant">Advanced</button>
+</div>
+</div>
+</section>
+<!-- Document List -->
+<section class="flex flex-col gap-6">
+<h2 class="text-sm font-bold text-outline uppercase tracking-widest px-1">Curated Resources</h2>
+<!-- PDF Card 1 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<img alt="Document thumbnail" class="w-full h-full object-cover opacity-80" data-alt="Close-up of organized mathematical equations and diagrams on a clean white paper document with soft blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx-G4SDqa37F3EVxKitsZCV3G_a1r5Zw8FdxZRIFAKx6ybXfzmVwmlyvXaTpm6X-M3ENehB7SuZo4-semhCuvYXhhW6ihQrgFqCLtaet6Z54AzKIWkVTuke3kH-wvh2jtj3j9T_FASZObcMn88ktRnwQoLXEd7HUXFmOhrivwCFt3mznzn_5z0-KIiYZE7Zn5RZ8hloXKjPOklpOy6iBxGsiT8WvYDfoUwddd8SgHK2T2XW_l9Ib1zQrTYDMy9XvQX6T3NK1XKRyk"/>
+<div class="absolute inset-0 bg-primary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-primary">Mathematics</span>
+<span class="text-[10px] font-medium text-outline">24 Pages</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Quantum Calculus Fundamentals</h3>
+<p class="text-on-surface-variant text-xs mt-1">Comprehensive notes on advanced derivation techniques.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">1 Credit</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                            Download
+                        </button>
+</div>
+</div>
+</div>
+<!-- PDF Card 2 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<img alt="Document thumbnail" class="w-full h-full object-cover opacity-80" data-alt="High-contrast black and white photography of complex physics formulas on a chalkboard with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf7ApOkARoUJMPK-mu2qG2jDx-iS-q1Z2T-DaTi1YltVHWVbVLBGCsELzi6gCaV8vl-nDSOfBewgiHhQqT-89Yy4UxGDbbaQ08WyOnjKMdIoVUyEbXS-U65RFnBupc_hIP1y2aGVOD52NQLVDdQ395asvNknZVM_3qQSpTfGPHsoIYDUcRLRswSgAlQ9cIddVfvOzmIk7OMusdr7IW99t0sw2_gOLCpLydtpYKgROUSGTMq-mJ0En6NnMWnN8Y31Hm-_2rxighlKY"/>
+<div class="absolute inset-0 bg-primary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-tertiary">Physics</span>
+<span class="text-[10px] font-medium text-outline">12 Pages</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Thermodynamics Masterclass</h3>
+<p class="text-on-surface-variant text-xs mt-1">The essential guide to entropy and thermal systems.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">2 Credits</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                            Download
+                        </button>
+</div>
+</div>
+</div>
+<!-- PDF Card 3 (Completed State) -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<img alt="Document thumbnail" class="w-full h-full object-cover opacity-60 grayscale" data-alt="A vintage typewriter and stacks of paper on a wooden desk with warm cinematic lighting and soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClC5Z7FzPb5RwRNnqYTwP5kyg_B9vCJB0WZ1T7WVYQsXGkpIkn-xqrxuQ-fWJBpuuNPOpxurHi-YLMWi-i7Gt21vITNnbOZAAu-qivC1lv_XOhJWR98Hv00WnDcFB_yA31NUsuCpjmRF0574d8UVulIevvtAdnC-t5bxKzweJv5yT3BWa8KhnIicRmyXNtjgPOsG4iaIcG4s0W1utiMNuWNpjnftLl7UVEvHoC0VOeMJQc1YTaZd_YZXZTtHf80ilYrPdNb_mm15Y"/>
+<div class="absolute inset-0 bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary">History</span>
+<span class="text-[10px] font-medium text-outline">48 Pages</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface/50 text-lg leading-tight tracking-tight">Industrial Revolution Analysis</h3>
+<p class="text-on-surface-variant/50 text-xs mt-1">Detailed case studies of 19th-century urbanization.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs font-bold text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full">Downloaded</span>
+<button class="text-primary text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="visibility">visibility</span>
+                            View
+                        </button>
+</div>
+</div>
+</div>
+<!-- PDF Card 4 -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-4 transition-transform active:scale-[0.98]">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm relative group">
+<img alt="Document thumbnail" class="w-full h-full object-cover opacity-80" data-alt="Microscopic view of bright blue chemical crystals with sharp crystalline structures and laboratory aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCvIP9LHHaeR1NzKOwDkTK4aGJUMS_SGaBxj1H9-GfkQ3x_vlTazl-YGxJOs_AlFJVdX1D92sK9tZkWRDClpEVDidLQ3fkRUCUjZEyDztgAlQn0tM3cYrf9soheUgHo0rQK0zLGc1WZKBKW9Z2Tygm5YEJmLTV4Yx8D9oK424hv2cxKXepplwrjTTG8QThtzOKvih_VBSmOoSzrVrEP8mA_YQmAmHZQyUd3AKcOnaRmaSzGEG7YJf4HhAQIl2j4jXKvAM5kvhpu50"/>
+<div class="absolute inset-0 bg-primary/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-3xl" data-icon="description">description</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary-container">Chemistry</span>
+<span class="text-[10px] font-medium text-outline">18 Pages</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface text-lg leading-tight tracking-tight">Organic Synthesis Lab Notes</h3>
+<p class="text-on-surface-variant text-xs mt-1">Experimental results for hydrocarbon reactions.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-sm font-bold text-on-surface-variant">1 Credit</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="download">download</span>
+                            Download
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#f7f9fb]/80 backdrop-blur-md z-50 rounded-t-2xl shadow-[0_-8px_24px_rgba(25,28,30,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 text-blue-700 rounded-2xl px-5 py-2 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold mt-1">Documents</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Subjects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium mt-1">Profile</span>
+</a>
+</nav>
+<!-- Confirmation Modal Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center px-6 hidden">
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm"></div>
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-[2rem] p-8 relative shadow-2xl">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="payments">payments</span>
+</div>
+<h4 class="font-headline font-extrabold text-2xl tracking-tight mb-2">Confirm Purchase</h4>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Deduct 1 credit from your balance to unlock this resource permanently?</p>
+<div class="flex flex-col w-full gap-3">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-2xl font-bold shadow-lg shadow-primary/30">Confirm Download</button>
+<button class="w-full text-outline py-4 font-bold text-sm">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

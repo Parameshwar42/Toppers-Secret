@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile &amp; Wallet | Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#434655",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-fixed-variant": "#5a00c6",
+                        "on-primary-fixed": "#00174b",
+                        "surface-tint": "#0053db",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-tertiary-container": "#c1ffc5",
+                        "surface-container": "#eceef0",
+                        "outline-variant": "#c3c6d7",
+                        "secondary-fixed-dim": "#d2bbff",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed-dim": "#4ae176",
+                        "secondary-container": "#8a4cfc",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "outline": "#737686",
+                        "on-secondary-fixed": "#25005a",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#002109",
+                        "secondary": "#712ae2",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-bright": "#f7f9fb",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#2563eb",
+                        "inverse-on-surface": "#eff1f3",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#005321",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "background": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#007e37",
+                        "on-secondary-container": "#fffbff",
+                        "tertiary": "#006229",
+                        "tertiary-fixed": "#6bff8f",
+                        "inverse-primary": "#b4c5ff",
+                        "primary": "#004ac6",
+                        "on-primary-container": "#eeefff",
+                        "secondary-fixed": "#eaddff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-background": "#191c1e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, rgba(247, 249, 251, 0.8), rgba(247, 249, 251, 0));
+        }
+        .background-shift {
+            background: linear-gradient(to top, rgba(247, 249, 251, 0.9), rgba(247, 249, 251, 0.4));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-md shadow-sm shadow-slate-200/50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600">menu_book</span>
+<h1 class="text-xl font-bold text-slate-900 tracking-tighter font-headline">Digital Atelier</h1>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary-fixed rounded-full">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-headline tracking-tight text-sm font-semibold text-primary">12 Credits</span>
+</div>
+</header>
+<main class="pt-24 px-6 space-y-8 max-w-2xl mx-auto">
+<!-- User Info Section -->
+<section class="flex flex-col items-center text-center gap-4">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full overflow-hidden bg-surface-container-high ring-4 ring-white shadow-xl shadow-slate-200/50">
+<img class="w-full h-full object-cover" data-alt="portrait of a focused young male university student in a bright studio setting with a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkg4nLWgMr2KrlDqQYC-Ub281_21iswlLM8628byITGRx4H6kRMJN9Cnt9wHwhT0NLG-8gov9EeO4ImM6Sxi1cmnabJJb0vBxW8hY4TEbpo4lkVKoG0J_g0Cox6crVw_ohFcj85xlI0sN9A-Y1fqUxF1XWTkGydKpJJVllqe5a8fCVozJOuBgnvD96O4ZUoUOddMcb1xk1tGMslIWLGjI8bMJHer20uyqM_t1ZcXi8jCAg60BfzUYuLPfbQPhGttaH1YjAJJMOegQ"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-on-primary p-1.5 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm">edit</span>
+</div>
+</div>
+<div class="space-y-1">
+<h2 class="text-2xl font-extrabold font-headline tracking-tight text-on-surface">Alex Thompson</h2>
+<p class="text-on-surface-variant font-medium">BSc Computer Science • Year 3</p>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    Stanford University
+                </div>
+</div>
+</section>
+<!-- Credit Balance & Wallet -->
+<section class="bg-surface-container-lowest p-6 rounded-[2rem] shadow-sm shadow-slate-200/50 border border-outline-variant/15">
+<div class="flex justify-between items-start mb-8">
+<div class="space-y-1">
+<span class="text-sm font-semibold text-on-surface-variant uppercase tracking-widest">Available Balance</span>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-extrabold font-headline text-on-surface">12</span>
+<span class="text-lg font-bold text-primary">Credits</span>
+</div>
+</div>
+<div class="p-3 bg-tertiary-fixed rounded-2xl">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-2xl" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3 mb-6">
+<!-- Package 1 -->
+<button class="flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors group">
+<span class="text-xs font-bold text-on-surface-variant mb-1">Lite</span>
+<span class="text-lg font-extrabold text-on-surface">10</span>
+<span class="text-[10px] text-primary font-bold">€4.99</span>
+</button>
+<!-- Package 2 -->
+<button class="flex flex-col items-center justify-center p-4 rounded-2xl bg-primary-fixed border-2 border-primary group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-on-primary text-[8px] font-bold px-2 py-0.5 rounded-bl-lg">BEST</div>
+<span class="text-xs font-bold text-on-primary-fixed-variant mb-1">Pro</span>
+<span class="text-lg font-extrabold text-on-primary-fixed">50</span>
+<span class="text-[10px] text-primary font-bold">€19.99</span>
+</button>
+<!-- Package 3 -->
+<button class="flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors group">
+<span class="text-xs font-bold text-on-surface-variant mb-1">Max</span>
+<span class="text-lg font-extrabold text-on-surface">100</span>
+<span class="text-[10px] text-primary font-bold">€34.99</span>
+</button>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add_card</span>
+                Buy Credits Now
+            </button>
+</section>
+<!-- Referral System -->
+<section class="bg-secondary-fixed p-6 rounded-[2rem] overflow-hidden relative">
+<div class="relative z-10 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-secondary-fixed text-2xl">celebration</span>
+<h3 class="text-xl font-bold font-headline text-on-secondary-fixed">Refer &amp; Earn</h3>
+</div>
+<p class="text-sm font-medium text-on-secondary-fixed-variant max-w-[80%]">Invite 3 friends and get <span class="font-bold">25 Credits</span> for free!</p>
+<div class="bg-white/40 p-4 rounded-2xl border border-white/20 backdrop-blur-sm">
+<div class="flex justify-between items-center mb-3">
+<span class="text-[10px] font-bold text-on-secondary-fixed uppercase tracking-wider">Your Progress</span>
+<span class="text-[10px] font-bold text-on-secondary-fixed bg-white/50 px-2 py-0.5 rounded-full">2/3 Joined</span>
+</div>
+<div class="w-full h-3 bg-white/30 rounded-full overflow-hidden flex gap-1 p-0.5">
+<div class="h-full bg-secondary rounded-full" style="width: 33%"></div>
+<div class="h-full bg-secondary rounded-full" style="width: 33%"></div>
+<div class="h-full bg-white/40 rounded-full" style="width: 33%"></div>
+</div>
+</div>
+<div class="flex gap-2">
+<div class="flex-grow bg-white/80 rounded-xl px-4 py-3 flex items-center justify-between border border-white/40">
+<span class="text-sm font-mono font-bold text-secondary">STUDENT-XQ72</span>
+<span class="material-symbols-outlined text-sm text-secondary">content_copy</span>
+</div>
+<button class="aspect-square w-12 bg-secondary text-on-secondary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+</section>
+<!-- Download History -->
+<section class="space-y-4">
+<div class="flex justify-between items-center px-2">
+<h3 class="text-lg font-bold font-headline">Recent Downloads</h3>
+<button class="text-xs font-bold text-primary uppercase tracking-widest">View All</button>
+</div>
+<div class="space-y-3">
+<!-- Item 1 -->
+<div class="bg-surface-container-low p-4 rounded-2xl flex items-center gap-4 group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-sm text-on-surface">Algorithmic Complexity Notes</h4>
+<p class="text-xs text-on-surface-variant">PDF • 2.4 MB • 2 days ago</p>
+</div>
+<button class="text-primary-container p-2">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-low p-4 rounded-2xl flex items-center gap-4 group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-sm text-on-surface">Data Structures Cheat Sheet</h4>
+<p class="text-xs text-on-surface-variant">DOCX • 1.1 MB • 1 week ago</p>
+</div>
+<button class="text-primary-container p-2">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Settings Section -->
+<section class="bg-surface-container-lowest rounded-[2rem] border border-outline-variant/15 divide-y divide-outline-variant/10">
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">dark_mode</span>
+<span class="font-bold text-sm">Dark Appearance</span>
+</div>
+<button class="w-12 h-6 bg-surface-container-highest rounded-full relative transition-colors p-1">
+<div class="w-4 h-4 bg-white rounded-full shadow-sm"></div>
+</button>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+<span class="font-bold text-sm">Push Notifications</span>
+</div>
+<button class="w-12 h-6 bg-primary rounded-full relative transition-colors p-1">
+<div class="w-4 h-4 bg-white rounded-full shadow-sm translate-x-6"></div>
+</button>
+</div>
+<div class="p-4 flex items-center justify-between text-error">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-bold text-sm">Log Out</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#f7f9fb]/80 backdrop-blur-md shadow-[0_-8px_24px_rgba(25,28,30,0.06)] z-50 rounded-t-2xl">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="../updated_homepage/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Home</span>
+</a>
+<!-- Documents -->
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="../eamcet_categories/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Documents</span>
+</a>
+<!-- Subjects -->
+<a class="flex flex-col items-center justify-center text-slate-500 px-5 py-2 hover:text-blue-600 transition-transform duration-200 scale-98" href="../updated_subjects/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">category</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium">Subjects</span>
+</a>
+<!-- Profile (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary/10 text-primary rounded-2xl px-5 py-2 transition-transform duration-200 scale-98" href="../profile_wallet/code.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold">Profile</span>
+</a>
+</nav>
+</body></html>
