@@ -21,8 +21,8 @@
             const { data, error } = await supabase.auth.signInWithOAuth({
                 provider: 'google',
                 options: {
-                    // Redirect back to homepage after Google Auth
-                    redirectTo: 'http://localhost:3000/updated_homepage/code.html'
+                    // Smart Redirect: Automatically detects if it is on localhost or Vercel
+                    redirectTo: window.location.origin + '/updated_homepage/code.html'
                 }
             });
             if (error) {
