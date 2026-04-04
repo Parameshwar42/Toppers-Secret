@@ -10,6 +10,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname));
 
+// Health check for Vercel troubleshooting
+app.get('/api/health', (req, res) => {
+    res.json({ status: 'ok', message: 'Backend is active', time: new Date() });
+});
+
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
