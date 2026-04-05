@@ -19,8 +19,8 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'Backend is active', time: new Date() });
 });
 
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.SUPABASE_URL || 'https://vbwncitkapkhkxodmysy.supabase.co';
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY || 'sb_publishable_oGP2RFiHbK78IU_9B9IzFQ_EWjLpBDX';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Store files in memory so we can upload them directly to Supabase cloud
@@ -103,6 +103,8 @@ app.post('/api/upload', upload.single('pdf'), async (req, res) => {
         res.status(500).json({ error: err.message || "Cloud Database error." });
     }
 });
+
+app.use(express.static(__dirname));
 
 const PORT = process.env.PORT || 3000;
 
